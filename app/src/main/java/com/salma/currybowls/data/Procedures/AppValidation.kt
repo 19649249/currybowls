@@ -1,4 +1,4 @@
-package com.salma.currybowls.Currybowlsdata.Procedures
+package com.salma.currybowls.data.Procedures
 
 object Validator {
 

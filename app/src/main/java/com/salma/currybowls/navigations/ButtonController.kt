@@ -1,4 +1,4 @@
-package com.salma.currybowls.CurryBowlsRouter
+package com.salma.currybowls.navigations
 
 import androidx.activity.ComponentActivity
 import androidx.activity.OnBackPressedCallback

@@ -1,4 +1,4 @@
-package com.salma.currybowls.Currybowlscomponents
+package com.salma.currybowls.components
 
 import android.util.Log
 import androidx.compose.foundation.background
@@ -45,7 +45,7 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.salma.currybowls.Currybowlsdata.NavElement
+import com.salma.currybowls.data.NavElement
 import com.salma.currybowls.ui.theme.AccentColor
 import com.salma.currybowls.ui.theme.BgColor
 import com.salma.currybowls.ui.theme.GrayColor

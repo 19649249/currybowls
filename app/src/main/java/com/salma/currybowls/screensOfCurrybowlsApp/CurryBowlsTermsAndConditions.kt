@@ -14,11 +14,11 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.salma.currybowls.R
-import com.salma.currybowls.Currybowlscomponents.HeadingTextComponent
-import com.salma.currybowls.Currybowlscomponents.NormalTextComponent
-import com.salma.currybowls.CurryBowlsRouter.AppRouter
-import com.salma.currybowls.CurryBowlsRouter.Screen
-import com.salma.currybowls.CurryBowlsRouter.SystemBackButtonHandler
+import com.salma.currybowls.components.HeadingTextComponent
+import com.salma.currybowls.components.NormalTextComponent
+import com.salma.currybowls.navigations.AppRouter
+import com.salma.currybowls.navigations.Screen
+import com.salma.currybowls.navigations.SystemBackButtonHandler
 
 @Composable
 fun TermsAndConditionsScreen() {

@@ -1,4 +1,4 @@
-package com.salma.currybowls.Currybowlsdata.Currybowlshomemodel
+package com.salma.currybowls.data.Currybowlshomemodel
 
 import android.util.Log
 import androidx.compose.material.icons.Icons
@@ -8,9 +8,9 @@ import androidx.compose.material.icons.filled.Settings
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth
-import com.salma.currybowls.Currybowlsdata.NavElement
-import com.salma.currybowls.CurryBowlsRouter.AppRouter
-import com.salma.currybowls.CurryBowlsRouter.Screen
+import com.salma.currybowls.data.NavElement
+import com.salma.currybowls.navigations.AppRouter
+import com.salma.currybowls.navigations.Screen
 
 class CurryBowlsHViewmodel : ViewModel() {
 

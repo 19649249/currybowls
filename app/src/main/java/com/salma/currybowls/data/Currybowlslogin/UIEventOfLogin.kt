@@ -1,4 +1,4 @@
-package com.salma.currybowls.Currybowlsdata.Currybowlslogin
+package com.salma.currybowls.data.Currybowlslogin
 
 sealed class UIEventOfLogin{
 

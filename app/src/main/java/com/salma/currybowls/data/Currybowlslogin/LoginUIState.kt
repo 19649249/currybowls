@@ -1,4 +1,4 @@
-package com.salma.currybowls.Currybowlsdata
+package com.salma.currybowls.data
 
 data class LoginUIState(
     var email  :String = "",

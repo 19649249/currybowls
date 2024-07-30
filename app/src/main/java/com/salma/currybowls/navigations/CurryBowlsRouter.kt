@@ -1,4 +1,4 @@
-package com.salma.currybowls.CurryBowlsRouter
+package com.salma.currybowls.navigations
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf

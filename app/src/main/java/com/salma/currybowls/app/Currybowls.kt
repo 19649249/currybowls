@@ -7,9 +7,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.salma.currybowls.Currybowlsdata.Currybowlshomemodel.CurryBowlsHViewmodel
-import com.salma.currybowls.CurryBowlsRouter.AppRouter
-import com.salma.currybowls.CurryBowlsRouter.Screen
+import com.salma.currybowls.data.Currybowlshomemodel.CurryBowlsHViewmodel
+import com.salma.currybowls.navigations.AppRouter
+import com.salma.currybowls.navigations.Screen
 import com.salma.currybowls.screensOfCurrybowlsApp.HomeScreen
 import com.salma.currybowls.screensOfCurrybowlsApp.LoginScreen
 import com.salma.currybowls.screensOfCurrybowlsApp.SignUpScreen

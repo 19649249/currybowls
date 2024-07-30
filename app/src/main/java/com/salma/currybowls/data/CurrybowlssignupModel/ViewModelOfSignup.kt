@@ -1,12 +1,12 @@
-package com.salma.currybowls.Currybowlsdata.CurrybowlssignupModel
+package com.salma.currybowls.data.CurrybowlssignupModel
 
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth
-import com.salma.currybowls.Currybowlsdata.UIStateForRegistration
-import com.salma.currybowls.Currybowlsdata.Procedures.Validator
-import com.salma.currybowls.CurryBowlsRouter.AppRouter
-import com.salma.currybowls.CurryBowlsRouter.Screen
+import com.salma.currybowls.data.UIStateForRegistration
+import com.salma.currybowls.data.Procedures.Validator
+import com.salma.currybowls.navigations.AppRouter
+import com.salma.currybowls.navigations.Screen
 
 
 class ViewModelOfSignup : ViewModel() {

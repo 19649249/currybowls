@@ -14,17 +14,17 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.salma.currybowls.Currybowlscomponents.ButtonComponent
-import com.salma.currybowls.Currybowlscomponents.CheckboxComponent
-import com.salma.currybowls.Currybowlscomponents.ClickableLoginTextComponent
-import com.salma.currybowls.Currybowlscomponents.DividerTextComponent
-import com.salma.currybowls.Currybowlscomponents.HeadingTextComponent
-import com.salma.currybowls.Currybowlscomponents.MyTextFieldComponent
-import com.salma.currybowls.Currybowlscomponents.PasswordTextFieldComponent
-import com.salma.currybowls.Currybowlsdata.CurrybowlssignupModel.UIEventOfSignUp
-import com.salma.currybowls.Currybowlsdata.CurrybowlssignupModel.ViewModelOfSignup
-import com.salma.currybowls.CurryBowlsRouter.AppRouter
-import com.salma.currybowls.CurryBowlsRouter.Screen
+import com.salma.currybowls.components.ButtonComponent
+import com.salma.currybowls.components.CheckboxComponent
+import com.salma.currybowls.components.ClickableLoginTextComponent
+import com.salma.currybowls.components.DividerTextComponent
+import com.salma.currybowls.components.HeadingTextComponent
+import com.salma.currybowls.components.MyTextFieldComponent
+import com.salma.currybowls.components.PasswordTextFieldComponent
+import com.salma.currybowls.data.CurrybowlssignupModel.UIEventOfSignUp
+import com.salma.currybowls.data.CurrybowlssignupModel.ViewModelOfSignup
+import com.salma.currybowls.navigations.AppRouter
+import com.salma.currybowls.navigations.Screen
 
 
 @Composable

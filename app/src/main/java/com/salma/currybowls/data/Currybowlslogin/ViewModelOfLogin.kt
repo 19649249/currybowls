@@ -1,13 +1,13 @@
-package com.salma.currybowls.Currybowlsdata
+package com.salma.currybowls.data
 
 import android.util.Log
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth
-import com.salma.currybowls.Currybowlsdata.Currybowlslogin.UIEventOfLogin
-import com.salma.currybowls.Currybowlsdata.Procedures.Validator
-import com.salma.currybowls.CurryBowlsRouter.AppRouter
-import com.salma.currybowls.CurryBowlsRouter.Screen
+import com.salma.currybowls.data.Currybowlslogin.UIEventOfLogin
+import com.salma.currybowls.data.Procedures.Validator
+import com.salma.currybowls.navigations.AppRouter
+import com.salma.currybowls.navigations.Screen
 
 
 class ViewModelOfLogin : ViewModel() {

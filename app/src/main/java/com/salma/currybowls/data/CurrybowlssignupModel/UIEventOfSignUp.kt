@@ -1,4 +1,4 @@
-package  com.salma.currybowls.Currybowlsdata.CurrybowlssignupModel
+package  com.salma.currybowls.data.CurrybowlssignupModel
 
 sealed class UIEventOfSignUp{
 
