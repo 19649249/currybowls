@@ -3,8 +3,10 @@ package com.salma.currybowls.screensOfCurrybowlsApp
 //import UserProfileActivity
 import android.content.Intent
 import android.util.Log
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -12,7 +14,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.requiredHeight
+import androidx.compose.foundation.layout.requiredSize
 import androidx.compose.foundation.layout.requiredWidth
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Surface
@@ -32,6 +36,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.salma.currybowls.DetailsPageActivity
 
 import com.salma.currybowls.R
+import com.salma.currybowls.UserProfileActivity
 import com.salma.currybowls.components.AppToolbar
 import com.salma.currybowls.components.NavigationDrawerBody
 import com.salma.currybowls.components.NavigationDrawerHeader
@@ -91,6 +96,28 @@ fun HomeScreen(homeViewModel: CurryBowlsHViewmodel = viewModel()) {
 
 
                     Image(
+                        painter = painterResource(id = R.drawable.prof),
+                        contentDescription = " ",
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 20.dp,
+                                y = 26.dp
+                            )
+                            .clickable {
+                                localContext.startActivity(
+                                    Intent(localContext, UserProfileActivity::class.java)
+                                )
+                            }
+                            .requiredSize(size = 42.dp)
+                            .clip(shape = CircleShape)
+                            .border(
+                                border = BorderStroke(0.10000000149011612.dp, Color(0xffbdbdbd)),
+                                shape = CircleShape
+                            )
+                    )
+
+                    Image(
                         painter = painterResource(id = R.drawable.chickencurry),
                         contentDescription = "",
                         modifier = Modifier
@@ -110,6 +137,11 @@ fun HomeScreen(homeViewModel: CurryBowlsHViewmodel = viewModel()) {
                             )
                     )
 //
+
+
+
+
+
 
                 }
 
