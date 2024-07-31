@@ -116,6 +116,104 @@ fun HomeScreen(homeViewModel: CurryBowlsHViewmodel = viewModel()) {
                                 shape = CircleShape
                             )
                     )
+                    Image(
+                        painter = painterResource(id = R.drawable.lafcurry),
+                        contentDescription = " ",
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 216.dp,
+                                y = 453.dp
+                            )
+                            .clickable {
+                                localContext.startActivity(
+                                    Intent(localContext, DetailsPageActivity::class.java)
+                                )
+                            }
+
+                            .requiredWidth(width = 180.dp)
+                            .requiredHeight(height = 200.dp)
+                    )
+
+                    Image(
+                        painter = painterResource(id = R.drawable.paneercurry),
+                        contentDescription = "",
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 216.dp,
+                                y = 256.dp
+                            )
+                            .clickable {
+                                localContext.startActivity(
+                                    Intent(localContext, DetailsPageActivity::class.java)
+                                )
+                            }
+                            .requiredWidth(width = 180.dp)
+                            .requiredHeight(height = 200.dp)
+                            .clip(shape = RoundedCornerShape(20.dp))
+                    )
+                    Image(
+                        painter = painterResource(id = R.drawable.fish),
+                        contentDescription = "",
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 21.dp,
+                                y = 65.dp
+                            )
+                            .clickable {
+                                localContext.startActivity(
+                                    Intent(localContext, DetailsPageActivity::class.java)
+                                )
+                            }
+                            .requiredWidth(width = 180.dp)
+                            .requiredHeight(height = 200.dp)
+                            .clip(shape = RoundedCornerShape(15.dp))
+                    )
+                    Image(
+                        painter = painterResource(id = R.drawable.prawns),
+                        contentDescription = "",
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 216.dp,
+                                y = 65.dp
+                            )
+                            .clickable {
+                                localContext.startActivity(
+                                    Intent(localContext, DetailsPageActivity::class.java)
+                                )
+                            }
+                            .requiredWidth(width = 180.dp)
+                            .requiredHeight(height = 200.dp)
+                            .clip(shape = RoundedCornerShape(15.dp))
+                    )
+
+
+                    Image(
+                        painter = painterResource(id = R.drawable.eggcurry),
+                        contentDescription = " ",
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 21.dp,
+                                y = 453.dp
+                            )
+                            .clickable {
+                                localContext.startActivity(
+                                    Intent(localContext, DetailsPageActivity::class.java)
+                                )
+                            }
+                            .requiredWidth(width = 180.dp)
+                            .requiredHeight(height = 200.dp)
+                            .clip(shape = RoundedCornerShape(10.dp))
+                    )
+
+
+
+
+
 
                     Image(
                         painter = painterResource(id = R.drawable.chickencurry),
