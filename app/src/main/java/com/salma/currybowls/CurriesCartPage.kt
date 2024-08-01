@@ -114,6 +114,97 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
                     .offset(x = 280.dp,
                         y = 581.dp))
 
+            Text(
+                text = "Curries Amount Total",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 14.sp),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 27.dp,
+                        y = 681.dp))
+            Text(
+                text = "Delivery charges",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 14.sp),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 27.dp,
+                        y = 625.dp))
+
+
+            Text(
+                text = "Sub Total",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 14.sp),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 27.dp,
+                        y = 585.dp))
+
+            Text(
+                text = "+",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 135.dp,
+                        y = 430.dp))
+            Text(
+                text = "+",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 135.dp,
+                        y = 312.dp))
+            Text(
+                text = "1",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 177.dp,
+                        y = 427.dp))
+            Text(
+                text = "1",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 177.dp,
+                        y = 309.dp))
+
+            Text(
+                text = "-",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 216.dp,
+                        y = 430.dp))
+            Text(
+                text = "-",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 216.dp,
+                        y = 312.dp))
 
 
 
