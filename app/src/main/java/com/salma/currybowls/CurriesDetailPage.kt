@@ -53,6 +53,120 @@ class DetailsPageActivity : ComponentActivity() {
 fun Greeting(name: String, modifier: Modifier = Modifier) {
 
 
+    Box(
+        modifier = modifier
+            .requiredWidth(width = 360.dp)
+            .requiredHeight(height = 640.dp)
+            .background(color = Color.White)
+    ) {
+        Box(
+            modifier = Modifier
+                .align(alignment = Alignment.TopStart)
+                .offset(x = (-7).dp,
+                    y = (-86).dp)
+                .requiredWidth(width = 375.dp)
+                .requiredHeight(height = 812.dp)
+                .background(color = Color.White)
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.chicken),
+                contentDescription = "",
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 0.dp,
+                        y = 88.dp)
+                    .requiredWidth(width = 375.dp)
+                    .requiredHeight(height = 463.dp))
+
+            Text(
+                text = "£ 180.00",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 20.sp),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 281.dp,
+                        y = 567.dp))
+            Text(
+                text = "Chicken Curry",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 20.dp,
+                        y = 567.dp))
+
+            Text(
+                text = "Indian chicken curry typically starts with whole spices, heated in oil. A sauce is then made with onions, ginger, garlic, and tomatoes, and powdered spices. Bone-in pieces of chicken are then added to the sauce, and simmered until cooked through.",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 20.dp,
+                        y = 601.dp))
+
+
+
+            val localContext = LocalContext.current
+            Box(
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 105.dp,
+                        y = 738.dp)
+                    .requiredWidth(width = 180.dp)
+                    .requiredHeight(height = 50.dp)
+                    .clip(shape = RoundedCornerShape(15.dp))
+                    .background(color = Color(0xFF4CAF50))
+                    .clickable {
+                        localContext.startActivity(
+                            Intent(localContext, AddtoCartActivity::class.java)
+                        )
+                    }
+            )
+            Text(
+                text = "Add to Cart",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 150.dp,
+                        y = 753.dp))
+            Box(
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 0.dp,
+                        y = 80.dp)
+                    .requiredWidth(width = 431.dp)
+                    .requiredHeight(height = 70.dp)
+                    .clip(shape = RoundedCornerShape(15.dp))
+                    .background(color = Color(0xFF4CAF50)))
+            Text(
+                text = "Curry Detail Page",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 22.sp,
+                    fontWeight = FontWeight.Bold),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 145.dp,
+                        y = 110.dp))
+
+
+
+        }
+    }
+
+
+
+
+
+
 }
 @Preview(showBackground = true)
 @Composable
