@@ -205,7 +205,112 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
                     .align(alignment = Alignment.TopStart)
                     .offset(x = 216.dp,
                         y = 312.dp))
+            val context = LocalContext.current
+            Box(
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 27.dp,
+                        y = 738.dp)
+                    .requiredWidth(width = 321.dp)
+                    .requiredHeight(height = 50.dp)
+                    .clickable {
+                        context.startActivity(
+                            Intent(context, PaymentActivity::class.java))
+                    }
 
+                    .clip(shape = RoundedCornerShape(15.dp))
+                    .background(color = Color(0xFF4CAF50)))
+            Text(
+                text = "Proceed to Pay",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 108.dp,
+                        y = 753.dp))
+            Box(
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 0.dp,
+                        y = 80.dp)
+                    .requiredWidth(width = 431.dp)
+                    .requiredHeight(height = 70.dp)
+                    .clip(shape = RoundedCornerShape(15.dp))
+                    .background(color = Color(0xFF4CAF50)))
+            Text(
+                text = "Cart Items ",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 22.sp,
+                    fontWeight = FontWeight.Bold),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 145.dp,
+                        y = 110.dp))
+
+            Image(
+                painter = painterResource(id = R.drawable.chicken),
+                contentDescription = "",
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 7.dp,
+                        y = 369.dp)
+                    .requiredWidth(width = 102.dp)
+                    .requiredHeight(height = 105.dp)
+                    .clip(shape = RoundedCornerShape(15.dp)))
+            Image(
+                painter = painterResource(id = R.drawable.lfcurry),
+                contentDescription = "",
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 7.dp,
+                        y = 244.dp)
+                    .requiredWidth(width = 100.dp)
+                    .requiredHeight(height = 104.dp)
+                    .clip(shape = RoundedCornerShape(24.dp)))
+            Text(
+                text = "Chicken",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 134.dp,
+                        y = 369.dp))
+            Text(
+                text = "LadiesFinger Curry",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 134.dp,
+                        y = 251.dp))
+            Text(
+
+                text = "£ 40.00",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 294.dp,
+                        y = 370.dp))
+            Text(
+                text = "£ 44.00",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 294.dp,
+                        y = 256.dp))
 
 
 
