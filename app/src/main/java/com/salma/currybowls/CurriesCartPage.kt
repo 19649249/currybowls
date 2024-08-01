@@ -77,6 +77,44 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
         ) {
 
 
+            Image(
+                painter = painterResource(id = R.drawable.arrow_left),
+                contentDescription = "arrow-left",
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 27.dp,
+                        y = 35.dp)
+                    .requiredSize(size = 24.dp))
+            Text(
+                text = "£ 90.00",
+                color = Color(0xFF4CAF50),
+                textAlign = TextAlign.End,
+                style = TextStyle(
+                    fontSize = 30.sp),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 241.dp,
+                        y = 671.dp))
+            Text(
+                text = "£ 6.00",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 20.sp),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 295.dp,
+                        y = 621.dp))
+            Text(
+                text = "£ 84.00",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 20.sp),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 280.dp,
+                        y = 581.dp))
+
+
 
 
 
