@@ -295,6 +295,15 @@ fun UserProfileContent(
             )
 
 
+            Spacer(modifier = Modifier.height(15.dp))
+
+            TextField(
+                value = location,
+                onValueChange = onLocationChange,
+                label = { Text("Location") },
+                modifier = Modifier.fillMaxWidth(),
+                keyboardOptions = KeyboardOptions.Default.copy(imeAction = ImeAction.Done)
+            )
 
 
 
