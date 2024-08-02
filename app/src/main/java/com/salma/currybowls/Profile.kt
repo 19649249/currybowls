@@ -284,7 +284,15 @@ fun UserProfileContent(
 
 
 
+            Spacer(modifier = Modifier.height(15.dp))
 
+            TextField(
+                value = email,
+                onValueChange = onEmailChange,
+                label = { Text("Email Id") },
+                modifier = Modifier.fillMaxWidth(),
+                keyboardOptions = KeyboardOptions.Default.copy(imeAction = ImeAction.Done)
+            )
 
 
 
